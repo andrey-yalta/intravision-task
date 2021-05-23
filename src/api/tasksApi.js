@@ -1,5 +1,5 @@
 import * as axios from "axios";
-const tenantguid = "1b6e0801-8f5a-43a9-bb65-9c468b3be39d"
+const tenantguid = "9d6fbb18-90ea-46cf-b8d3-fc9b4b0394a3"
 const instance = axios.create({
     baseURL:`http://intravision-task.test01.intravision.ru`,
     headers:{'Content-Type': 'application/json'},

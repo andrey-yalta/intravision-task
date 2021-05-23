@@ -27,6 +27,7 @@
 .task-changer__ul-executor{
   background-color: #ecf3f7;
   position: absolute;
+  z-index: 99;
   top:50px;
   li{
     color: #a09fa8;
@@ -44,6 +45,7 @@
   background-color: #ecf3f7;
   position: absolute;
   top:40px;
+  z-index: 99;
   li{
     color: #a09fa8;
     font-family: 'Ubuntu', 'sans-serif';
