@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import {Header} from "./components/Header/Header";
+import './css/style.scss';
+import React from "react";
+import {Navbar} from "./components/Navbar/Navbar";
+import {Route} from "react-router-dom";
+import {Users} from "./components/otherComponents/Users";
+import {Actives} from "./components/otherComponents/Actives";
+import {InformationBase} from "./components/otherComponents/InformationBase";
+import {Settings} from "./components/otherComponents/Settings";
+import {TasksContainer} from "./components/Tasks/TasksContainer";
+import {ChangerContainer} from "./components/Changer/ChangerContainer";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Header/>
+      <Navbar/>
+      <Route path={"/"} render={ ()=><TasksContainer/> } exact/>
+      <Route path={"/settings"} render={ ()=><Settings/> } exact/>
+      <Route path={"/users"} render={ ()=><Users/> } exact/>
+      <Route path={"/actives"} render={ ()=><Actives/> } exact/>
+      <Route path={"/information"} render={ ()=><InformationBase/> } exact/>
+      <Route path={"/changer"}  render={ ()=><ChangerContainer/> }/>
     </div>
   );
 }

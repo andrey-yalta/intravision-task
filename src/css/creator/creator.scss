@@ -1,0 +1,80 @@
+
+.task-creator{
+  width: 55%;
+  overflow: scroll;
+  height: calc(100% - 65px);
+  position: fixed;
+  top: 65px;
+  right: 0;
+  background-color: #ecf3f7;
+  border:2px solid #eaeaea;
+  &:hover{
+    border:2px solid #42aaff;
+  }
+}
+.creator-none{
+  display: none;
+}
+
+.creator__header{
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 18px 33px;
+  color: #fff;
+  height: 60px;
+  background-color: #1a4876;
+  width: 100%;
+}
+
+.close{
+  width: 25px;
+  height: 25px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  right: 33px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #fff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.creactor__inputs{
+  margin-top: 20px;
+
+  label{
+    color: #a9a9b2;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  padding: 18px 33px;
+  display: flex;
+  flex-direction: column;
+  textarea{
+    width: 70%;
+    min-height: 80px;
+    border:none;
+    appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  .creactor__input-about{
+    height: 120px;
+  }
+  button{
+    margin-top: 30px;
+  }
+}

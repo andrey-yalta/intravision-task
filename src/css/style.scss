@@ -1,0 +1,55 @@
+@import "zero.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import "header/header.scss";
+@import "navbar/navbar.scss";
+@import "tasks/tasks.scss";
+@import "creator/creator.scss";
+@import "changer/changer.scss";
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+button{
+  width: 180px;
+  height: 40px;
+  background-color: #008cf0;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'Ubuntu', sans-serif;
+  color: #ffffff;
+  border-radius: 25px;
+  border:none;
+  cursor: pointer;
+  &:hover{
+    background-color: #3796f8;
+  }
+}
+.content{
+  top:65px;
+  left: 85px;
+  position: absolute;
+
+  height: auto;
+  width: calc(100% - 85px);
+  // background-color: #CFCFCF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
