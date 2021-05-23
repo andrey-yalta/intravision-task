@@ -9,10 +9,16 @@ import {InformationBase} from "./components/otherComponents/InformationBase";
 import {Settings} from "./components/otherComponents/Settings";
 import {TasksContainer} from "./components/Tasks/TasksContainer";
 import {ChangerContainer} from "./components/Changer/ChangerContainer";
+import {getInicialize} from "./redux/tasks-reducer";
+import {useDispatch} from "react-redux";
 
 
 
 function App() {
+    const dispatch = useDispatch()
+    React.useEffect(()=>{
+        dispatch(getInicialize())
+    },[dispatch])
   return (
     <div >
       <Header/>
