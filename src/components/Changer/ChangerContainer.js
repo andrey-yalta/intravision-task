@@ -1,10 +1,10 @@
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {editTask} from "../../redux/tasks-reducer";
 import {Changer} from "./Changer";
+import {editTask} from "../../redux/tasks-actions";
 
 
-export const ChangerContainer =({isChangerOpen,changerOpenHandler,users,statuses})=>{
+export const ChangerContainer = ({isChangerOpen,changerOpenHandler,users,statuses})=>{
 
     const selectedTask= useSelector(state => state.tasksPage.selectedTask)
     const createdAt =  new Date(Date.parse(selectedTask && selectedTask.createdAt))

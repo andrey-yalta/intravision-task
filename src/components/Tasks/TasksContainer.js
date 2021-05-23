@@ -1,7 +1,7 @@
 import React from 'react'
 import {useDispatch, useSelector} from "react-redux";
-import {getTasks} from "../../redux/tasks-reducer";
 import {Tasks} from "./Tasks";
+import {getTasks} from "../../redux/tasks-actions";
 
 
 export const TasksContainer = ()=>{

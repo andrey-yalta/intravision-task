@@ -1,7 +1,9 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {addTask} from "../../redux/tasks-reducer";
 import {Creator} from "./Creator";
+import {addTask} from "../../redux/tasks-actions";
+
+
 
 export const CreatorContainer = ({isCreatorOpen,creatorOpenHandler,onChangerOpenHandler})=>{
     const dispatch = useDispatch()
@@ -20,6 +22,6 @@ export const CreatorContainer = ({isCreatorOpen,creatorOpenHandler,onChangerOpen
     const [description, setDescription] = React.useState("");
     return(
         <Creator onSubmitForm={onSubmitForm} taskName={taskName} setTaskName={setTaskName} description={description}
-                 setDescription={setDescription} isCreatorOpen={isCreatorOpen}/>
+                 setDescription={setDescription} isCreatorOpen={isCreatorOpen} creatorOpenHandler={creatorOpenHandler}/>
     )
 }

@@ -11,7 +11,7 @@ export const Tasks = ({setIsCreatorOpen,isCreatorOpen,setIsChangerOpen,users,sta
     const onChangerOpenClick =(value)=>{
         setIsChangerOpen(value)
     }
-
+    console.log('render tasks')
     return(
         <div className="content">
             <CreatorContainer isCreatorOpen={isCreatorOpen} onChangerOpenHandler={onChangerOpenClick} creatorOpenHandler={onCreatorOpenClick}/>

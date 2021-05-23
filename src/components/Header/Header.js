@@ -2,6 +2,7 @@ import React from 'react'
 import loupe from '../../assets/img/loupe.png'
 import headerPhoto from '../../assets/img/header-photo.png'
 export const Header = ()=>{
+
     return(
         <div className="header">
             <div className="header-search">

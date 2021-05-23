@@ -23,7 +23,7 @@ export const Changer =({isChangerOpen,changerOpenHandler,users,statuses,setSelec
     const onTaskCommentInput=(e)=>{
                 setTaskComment(e.target.value)
     }
-
+    console.log("changer render")
     return(
         <div className= {isChangerOpen?"task-changer":"task-changer changer-none"}>
             <div className="changer__header">

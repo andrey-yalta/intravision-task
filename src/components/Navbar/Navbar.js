@@ -7,12 +7,13 @@ import nav_li_4 from "../../assets/img/nav_li_4.png"
 import nav_li_5 from "../../assets/img/nav_li_5.png"
 import nav_li_6 from "../../assets/img/nav_li_6.png"
 import {NavLink} from "react-router-dom";
-
 export const Navbar =()=>{
     return(
         <div className="navbar">
             <div className="navbar__logo">
+                <NavLink to={"/"}>
                 <img src={logo} alt="intravision"/>
+                </NavLink>
             </div>
             <nav className="navbar__menu">
                 <ul>
@@ -22,7 +23,7 @@ export const Navbar =()=>{
                             <span>База зданий</span>
                         </li>
                     </NavLink>
-                    <NavLink to={'/'}>
+                    <NavLink to={'/tasks'}>
                         <li>
                             <img src={nav_li_2} align="Заявки" alt="заявки"/>
                             <span>Заявки</span>
@@ -34,7 +35,7 @@ export const Navbar =()=>{
                             <span>Сотрудники</span>
                         </li>
                     </NavLink>
-                    <NavLink to={'/users'}>
+                    <NavLink to={'/clients'}>
                         <li>
                             <img src={nav_li_4} alt="Клиенты"/>
                             <span>Клиенты</span>

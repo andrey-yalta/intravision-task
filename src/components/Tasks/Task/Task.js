@@ -1,6 +1,7 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {getTaskById, setSelectedTaskId} from "../../../redux/tasks-reducer";
+import {getTaskById, setSelectedTaskId} from "../../../redux/tasks-actions";
+
 export const Task = ({id,name,executorName,statusName,statusRgb,priorityId,priority,onChangerOpenHandler})=>{
     const dispatch = useDispatch()
     const OnTaskClick =()=>{
